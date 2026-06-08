@@ -1,6 +1,10 @@
 body {
     background-color: lightgrey;
-    font-family: Arial, sans-serif;
+    font-family: 'Robot', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
 }
 
 h1 {
@@ -42,4 +46,71 @@ padding: 10px;
     background-color: lightblue;
     font-size: 16px;
 }
+
+ul {
+    list-style-type: none;    
+    list-style-image: url('https://icons8.com');
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.extra-box {
+    display: none;
+}
+
+.right-box {
+    float: right;
+}
+
+.clear-box {
+    clear: both;
+}
+
+
+
+.container {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px solid #000;
+}
+.sticky-element {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "header header" 
+        "content sidebar" 
+        "footer footer";
+}
+
+.header { grid-area: header; }
+.content { grid-area: content; }
+.sidebar { grid-area: sidebar; }
+.footer { grid-area: footer; }
+
+
+
+
+
+
+
+
 
